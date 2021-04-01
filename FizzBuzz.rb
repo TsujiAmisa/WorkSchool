@@ -1,17 +1,15 @@
 num=1
-while num<100
-    num_t=num%3
-    num_f=num%5
-    if num_t==0 && num_f==0
+while num<101
+    #num_t=num%3
+    #num_f=num%5
+    if num%3==0 && num%5==0
         puts "FizzBuzz"
-    elsif num_t==0 && num_f!=0
+    elsif num%3==0 && num%5!=0
         puts "Fizz"
-    elsif num_t!=0 && num_f==0
+    elsif num%3!=0 && num%5==0
         puts "Buzz"
     else
-        puts num.to_s
+        puts num
     end
     num=num+1
 end
-
-    
